@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-// Write a class called MergeSort with a sort method which accepts an array and sorts it using the merge sort algorithm. Big O: O(n log n)
+// ? Write a class called MergeSort with a sort method which accepts an array and sorts it using the merge sort algorithm. Big O: O(n log n)
 public class MergeSort {
 
     private static List<Integer> merge(List<Integer> arr1, List<Integer> arr2) {
@@ -47,10 +47,10 @@ public class MergeSort {
         List<Integer> result = sort(list);
         long end = System.nanoTime();
         double elapsedTimeInSecond = (end - start) / 1_000_000_000.0;
+        System.out.print("\033[H\033[2J");
         System.out.println(result);
-        System.out.println("[46m************************************[0m");
+        System.out.println("[46m****************** Merge Sort ******************[0m");
         System.out.println("Elapsed time in seconds: " + elapsedTimeInSecond);
-
     }
 
     private static List<Integer> generateRandomList() {
