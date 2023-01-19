@@ -3,7 +3,7 @@ package montalvo.dsa.algorithms.search;
 import java.util.Arrays;
 import java.util.List;
 
-// Write a class called BinarySearch with a search method which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1. Big O: O(log n)
+// ? Write a class called BinarySearch with a search method which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1. Big O: O(log n)
 public class BinarySearch {
     public static int search(List<Integer> arr, int elem) {
         int start = 0;

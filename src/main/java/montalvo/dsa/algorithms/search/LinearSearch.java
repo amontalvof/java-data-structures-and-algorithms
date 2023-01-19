@@ -3,7 +3,7 @@ package montalvo.dsa.algorithms.search;
 import java.util.Arrays;
 import java.util.List;
 
-// Write a class called LinearSearch with a search method which accepts an array and a value, and returns the index at which the value exists. If the value does not exist in the array, return -1. Big O: O(n)
+// ? Write a class called LinearSearch with a search method which accepts an array and a value, and returns the index at which the value exists. If the value does not exist in the array, return -1. Big O: O(n)
 public class LinearSearch {
     public static <T> int search(List<T> array, T value) {
         for (int i = 0; i < array.size(); i++) {

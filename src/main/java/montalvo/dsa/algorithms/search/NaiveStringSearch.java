@@ -1,6 +1,6 @@
 package montalvo.dsa.algorithms.search;
 
-// Write a class called NaiveStringSearch with a search method which accepts a long string and a short string and returns how many times the short string appears in the long string. Assume the short string is always shorter than the long string.
+// ? Write a class called NaiveStringSearch with a search method which accepts a long string and a short string and returns how many times the short string appears in the long string. Assume the short string is always shorter than the long string.
 public class NaiveStringSearch {
     public static int search(String longStr, String shortStr) {
         int count = 0;
