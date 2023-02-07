@@ -1,20 +1,34 @@
 package montalvo.dsa;
 
-import montalvo.dsa.dataStructures.trees.BinarySearchTree;
+import montalvo.dsa.dataStructures.trees.binaryHeap.MaxBinaryHeap;
 
 public class App {
     public static void main(String[] args) {
-        BinarySearchTree<Integer> tree = new BinarySearchTree<>();
-        tree.insert(10);
-        tree.insert(5);
-        tree.insert(13);
-        tree.insert(2);
-        tree.insert(7);
-        tree.insert(11);
-        tree.insert(16);
-        tree.insert(13);
         System.out.print("\033[H\033[2J");
-        System.out.println(tree.find(55));
-        System.out.println(tree);
+
+        MaxBinaryHeap<Integer> heap = new MaxBinaryHeap<>();
+        heap.insert(41);
+        heap.insert(39);
+        heap.insert(33);
+        heap.insert(18);
+        heap.insert(27);
+        heap.insert(12);
+        heap.insert(55);
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
+        System.out.println(heap);
+        System.out.println(heap.extractMax());
     }
 }

@@ -1,4 +1,4 @@
-package montalvo.dsa.dataStructures.trees;
+package montalvo.dsa.dataStructures.trees.binarySearch;
 
 public class Node<T> {
     private T value;
