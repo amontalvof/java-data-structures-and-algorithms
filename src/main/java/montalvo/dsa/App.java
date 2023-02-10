@@ -1,24 +1,25 @@
 package montalvo.dsa;
 
-import montalvo.dsa.dataStructures.hashTables.HashTable;
+import montalvo.dsa.dataStructures.graphs.Graph;
 
 public class App {
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
-        HashTable hashTable = new HashTable(17);
-        hashTable.set("maroon", "#800000");
-        hashTable.set("yellow", "#FFFF00");
-        hashTable.set("olive", "#808000");
-        hashTable.set("salmon", "#FA8072");
-        hashTable.set("lightcoral", "#F08080");
-        hashTable.set("mediumvioletred", "#C71585");
-        hashTable.set("plum", "#DDA0DD");
-        hashTable.set("plum", "#0000FF");
-        hashTable.set("purple", "#DDA0DD");
-        hashTable.set("violet", "#DDA0DD");
-        System.out.println(hashTable.get("plum"));
-        System.out.println(hashTable.keys());
-        System.out.println(hashTable.values());
+        Graph<String> graph = new Graph<>();
+        graph.addVertex("Tokyo");
+        graph.addVertex("Dallas");
+        graph.addVertex("Aspen");
+        graph.addVertex("Los Angeles");
+        graph.addVertex("Hong Kong");
+        graph.addEdge("Dallas", "Tokyo");
+        graph.addEdge("Dallas", "Aspen");
+        graph.addEdge("Hong Kong", "Tokyo");
+        graph.addEdge("Hong Kong", "Dallas");
+        graph.addEdge("Los Angeles", "Hong Kong");
+        graph.addEdge("Los Angeles", "Dallas");
+        graph.removeVertex("Hong Kong");
+        graph.removeVertex("Aspen");
+        System.out.println("[46m************************************[0m");
     }
 
 }
